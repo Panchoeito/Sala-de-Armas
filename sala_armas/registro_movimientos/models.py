@@ -16,9 +16,20 @@ class Usuario(models.Model):
 class Armamento(models.Model):
     tipo =  models.CharField(max_length=50)
     ni = models.IntegerField()
+    def __str__(self):
+        return f"Armamento: {self.tipo} {self.ni}"
+    
+class Material(models.Model):
+    tipo = models.CharField(max_length=50)
+    def __str__(self):
+        return f"Tipo: {self.tipo}"
+    
+class Municion(models.Model):
+    calibre = models.CharField(max_length=50)
+    año = models.IntegerField()
     
     def __str__(self):
-        return f"{self.tipo} {self.ni}"
+        return f"Calibre: {self.calibre}"
     
 class Movimiento(models.Model):
     fechahora = models.DateTimeField(auto_now_add=True, blank=True)
