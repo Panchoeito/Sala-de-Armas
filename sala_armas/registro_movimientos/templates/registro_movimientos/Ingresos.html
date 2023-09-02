@@ -25,20 +25,21 @@
 
             <fieldset>
                 <legend>Datos del Armamento</legend>
-                <label for="movimiento"><b>Movimiento</b></label>
-                <select name="movimiento" id="movimiento" size="1">
-                    <option value="1">Provisión a Sala de Armas</option>
-                    <option value="2">Entrega a Usuario</option>
-                    <option value="3">Recepción de Usuario</option>
-                    <option value="4">Descargo de Sala de Armas</option>
+                <label for="tipo"><b>Tipo de movimiento</b></label>
+                <select name="tipo" id="tipo" size="1">
+                    <option value="Carga">Provisión a Sala de Armas</option>
+                    <option value="Entrega">Entrega a Usuario</option>
+                    <option value="Recepción">Recepción de Usuario</option>
+                    <option value="Descarga">Descargo de Sala de Armas</option>
                 </select>
                 <br><br>
-                <label for="uso"><b>Uso</b></label>
-                    <input type="checkbox" name="uso" id="uso" value="1">Servicio
-                    <input type="checkbox" name="uso" id="uso" value="2">Salida al Terreno
-                    <input type="checkbox" name="uso" id="uso" value="3">Instrucción
-                    <input type="checkbox" name="uso" id="uso" value="4">Formación
-                    <input type="checkbox" name="uso" id="uso" value="4">Tiro
+                <label for="motivo"><b>Motivo</b></label>
+                    <input type="checkbox" name="motivo" id="motivo" value="Servicio">Servicio
+                    <input type="checkbox" name="motivo" id="motivo" value="Terreno">Salida al Terreno
+                    <input type="checkbox" name="motivo" id="motivo" value="Instrucción">Instrucción
+                    <input type="checkbox" name="motivo" id="motivo" value="Ceremonial">Ceremonial
+                    <input type="checkbox" name="motivo" id="motivo" value="Tiro">Tiro
+                    <input type="checkbox" name="motivo" id="motivo" value="Mantenimiento">Mantenimiento
                 <br><br>
                 <label for="fuego"><b>Consumo de Munición</b></label> <br>
                 <input type="radio" value="1" name="fuego">Sí
