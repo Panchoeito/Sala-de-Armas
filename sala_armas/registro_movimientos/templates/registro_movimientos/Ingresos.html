@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Ingresos</h1>
+        <h1>Movimientos de Armamento</h1>
         <ul>
             <li><a href="/Index.html">Inicio</a></li>
             <li><a href="/pages/Carga.html">Carga</a></li>
@@ -21,31 +21,30 @@
     </header>
 
     <div id="formulario 1">
-        <form action="" method="">
+        <form action="" method="POST">
 
             <fieldset>
                 <legend>Datos del Armamento</legend>
-                <label for="movimiento"><b>Movimiento</b></label>
-                <select name="movimiento" id="movimiento" size="1">
-                    <option value="1">Provisión a Sala de Armas</option>
-                    <option value="2">Entrega a Usuario</option>
-                    <option value="3">Recepción de Usuario</option>
-                    <option value="4">Descargo de Sala de Armas</option>
+                <label for="tipo"><b>Tipo de movimiento</b></label>
+                <select name="tipo" id="tipo" size="1">
+                    <option value="Carga">Provisión a Sala de Armas</option>
+                    <option value="Entrega">Entrega a Usuario</option>
+                    <option value="Recepción">Recepción de Usuario</option>
+                    <option value="Descarga">Descargo de Sala de Armas</option>
                 </select>
                 <br><br>
-                <label for="uso"><b>Uso</b></label>
-                    <input type="checkbox" name="uso" id="uso" value="1">Servicio
-                    <input type="checkbox" name="uso" id="uso" value="2">Salida al Terreno
-                    <input type="checkbox" name="uso" id="uso" value="3">Instrucción
-                    <input type="checkbox" name="uso" id="uso" value="4">Formación
-                    <input type="checkbox" name="uso" id="uso" value="4">Tiro
+                <label for="motivo"><b>Motivo</b></label> <br>
+                    <input type="radio" name="motivo" id="motivo" value="Servicio">Servicio
+                    <input type="radio" name="motivo" id="motivo" value="Terreno">Salida al Terreno
+                    <input type="radio" name="motivo" id="motivo" value="Instrucción">Instrucción
+                    <input type="radio" name="motivo" id="motivo" value="Ceremonial">Ceremonial
+                    <input type="radio" name="motivo" id="motivo" value="Tiro">Tiro
+                    <input type="radio" name="motivo" id="motivo" value="Mantenimiento">Mantenimiento
                 <br><br>
-                <label for="fuego"><b>Consumo de Munición</b></label> <br>
-                <input type="radio" value="1" name="fuego">Sí
-                <input type="radio" value="2" name="fuego">No
-                <br><br>
-                <label for="evaluacion">Evaluación del tiro</label>
-                <input type="color" name="evaluacion" id="evaluacion">
+                <label for="mantenimiento"><b>Mantenimiento</b></label> <br>
+                <input type="radio" value="1er Nivel" name="mantenimiento">1er Nivel
+                <input type="radio" value="2do Nivel" name="mantenimiento">2do Nivel
+                <input type="radio" value="3er Nivel" name="mantenimiento">3er Nivel
                 <br><br>
                 <label for="observaciones"><b>Observaciones</b></label><br>
                 <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Novedades detectadas o documentación del movimiento"></textarea>
